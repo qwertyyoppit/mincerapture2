@@ -8,5 +8,4 @@ About the first project:
 *  I worked on it during February and March, 2026
 *  It was being based on Minecraft.
 *  It had infinite generation and a DDA voxel raycast for block breaking.
-*  It was getting very messy.
-*  It had a large main file that was inflexible to work with, and had lots of strewn about code needing to be organized and sorted out into data structures and classes.
+*  It used my LearnOpenGL project as a starting point, having a very inflexible and long main file, with lots of strewn about code needing to be organized and sorted out into data structures and classes.
