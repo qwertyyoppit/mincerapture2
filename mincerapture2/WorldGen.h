@@ -45,8 +45,6 @@ public:
 
 	glm::vec2 CollideLayer(const std::tuple<glm::vec3, glm::vec3> &ray) const;
 
-	bool BoxCollide(const std::array<glm::vec2,4> box) const;
-
 	unsigned int GetBlock(glm::ivec2 block, int layer)
 	{
 		return GetBlock(block.x, block.y, layer);
