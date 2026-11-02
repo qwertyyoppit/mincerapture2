@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="mincerapture2/mincerapture2.vcxproj" Id="e7dbbcda-b2fb-44e8-adcb-8c3c1ab98343" />
+</Solution>
