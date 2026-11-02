@@ -58,22 +58,6 @@ glm::vec2 WorldGen::CollideLayer(const std::tuple<glm::vec3, glm::vec3> &ray) co
 	return get<1>(ray) * dist + get<0>(ray);
 }
 
-bool WorldGen::BoxCollide(const std::array<glm::vec2,4> box) const
-{
-	float top = 0.0f, bottom = 0.0f, right = 0.0f, left = 0.0f;
-	for (auto &point : box)
-	{
-		if (point.y > top) top = point.y;
-		if (point.y < bottom) bottom = point.y;
-		if (point.x > right) right = point.x;
-		if (point.x < left) left = point.x;
-	}
-	float height = top-bottom, width = right-left;
-	int x = fmod(left, 1.0f) + width;
-	int y = fmod(bottom, 1.0f) + height;
-	return false;
-}
-
 unsigned int WorldGen::GetBlock(int x, int y, int layer)
 {
 	auto chunk = BlockToChunk(x, y);
