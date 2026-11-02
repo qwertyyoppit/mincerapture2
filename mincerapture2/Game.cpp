@@ -58,26 +58,6 @@ void Game::Init()
     auto dropped = new DroppedItem(2);
     Entities.push_back(std::unique_ptr<Entity>(dropped));
     dropped->pos_y = 40;
-
-    std::array<glm::vec2, 4> box1 = { { {0.0f, 1.0f}, {1.0f, 1.0f}, {0.0f, 0.0f}, {1.0f, 0.0f} } }, box2 = box1;
-    constexpr glm::vec2 posits[2] = { glm::vec2(0.0f), {0.5f, 0.5f}};
-    constexpr float theta1 = 0.0f, theta2 = glm::pi<float>() / 4.0f;
-    constexpr float size1 = 3.0f, size2 = 1.0f;
-    box1 = { { {0.0f, 1.0f}, {1.0f, 1.0f}, {0.0f, 0.0f}, {1.0f, 0.0f} } };
-    box2 = { { {1.0f, 1.5f}, {1.5f, 2.0f}, {2.0f, 1.5f}, {1.5f, 1.0f} } };
-    for (auto& point : box1)
-    {
-        point *= size1;
-        continue;
-        point.x = cosf(acosf(point.x) + theta1);
-        point.y = sinf(asinf(point.y) + theta1);
-        point.x = point.x * size1 - size1 / 2.0f;
-        point.y = point.x * size1 - size1 / 2.0f;
-        point.x += posits[0].x + point.x * size1;
-        point.y += posits[0].y + point.y * size1;
-
-    }
-    std::cout << Collision::BoxCollide(box1, box2);
 }
 
 void Game::ProcessInput()
