@@ -4,8 +4,6 @@ Due to my interests at the time, I was basing this one on The Blockheads, so thi
 I focused more on learning structure and organization, since I already had experience implementing features.
 
 About the first project:
-*  It was deleted when I changed my OS, but I was planning to restart anew anyways
-*  I worked on it during February and March, 2026
-*  It was being based on Minecraft.
-*  It had infinite generation and a DDA voxel raycast for block breaking.
-*  It used my LearnOpenGL project as a starting point, having a very inflexible and long main file, with lots of strewn about code needing to be organized and sorted out into data structures and classes.
+I worked on it during February and March, 2026. It was deleted when I changed my OS, but I was planning to restart anew anyways.
+Restored from code saved in various places, the main.cpp and WorldGen.cpp demonstrate all substantial differences between this newer project. This includes 3D functionality more like Minecraft, infinite world generation and an implemented DDA voxel raycast for block breaking.
+Additionally, due to using my LearnOpenGL project as a starting point, the main file became long and inflexible to work with, needing to be organized and split up into data structures and classes.
